@@ -451,4 +451,29 @@ pub struct MoveCall {
     pub type_arguments: Vec<TypeTag>,
     /// The arguments to the function.
     pub arguments: Vec<Argument>,
+
+    // Have some way for the resolve request to request the type arguments of the functions itself
+    // This is slightly lower pri...
+    function_argument_types: Vec<what ever this is>,
 }
+
+
+fun r<T>(r: Recieving<T>)
+
+fun foo_mut<T>(shared: &mut Treasury<T>)
+
+fun foo<T>(shared: &Treasury<T>)
+
+
+input: 0x9
+
+foo_mut(0)
+foo(0)
+
+&mut 0x9
+
+
+input: 0x9
+foo(0)
+
+& 0x9
