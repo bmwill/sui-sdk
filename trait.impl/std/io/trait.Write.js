@@ -1,0 +1,3 @@
+(function() {var implementors = {
+"sui_sdk":[["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/1.79.0/std/io/trait.Write.html\" title=\"trait std::io::Write\">Write</a> for <a class=\"struct\" href=\"sui_sdk/hash/struct.Hasher.html\" title=\"struct sui_sdk::hash::Hasher\">Hasher</a>"]]
+};if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()
