@@ -1,6 +1,7 @@
 mod bls12381;
 mod ed25519;
 mod multisig;
+mod passkey;
 mod secp256k1;
 mod secp256r1;
 mod signature;
@@ -18,6 +19,8 @@ pub use multisig::MultisigCommittee;
 pub use multisig::MultisigMember;
 pub use multisig::MultisigMemberPublicKey;
 pub use multisig::MultisigMemberSignature;
+pub use passkey::PasskeyAuthenticator;
+pub use passkey::PasskeyPublicKey;
 pub use secp256k1::Secp256k1PrivateKey;
 pub use secp256k1::Secp256k1PublicKey;
 pub use secp256k1::Secp256k1Signature;

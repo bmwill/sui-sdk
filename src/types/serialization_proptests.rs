@@ -110,6 +110,7 @@ serialization_test!(ZkLoginProof);
 serialization_test!(ZkLoginPublicIdentifier);
 serialization_test!(CircomG1);
 serialization_test!(CircomG2);
+serialization_test!(PasskeyAuthenticator);
 serialization_test!(CheckpointContentsDigest);
 serialization_test!(CheckpointDigest);
 serialization_test!(ConsensusCommitDigest);

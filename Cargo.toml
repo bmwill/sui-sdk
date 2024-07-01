@@ -23,7 +23,7 @@ rustdoc-args = [
 
 [features]
 default = []
-serde = ["dep:serde", "dep:serde_derive", "dep:serde_with", "dep:bcs", "roaring/std"]
+serde = ["dep:serde", "dep:serde_derive", "dep:serde_with", "dep:bcs", "dep:serde_json", "roaring/std"]
 schemars = ["serde", "dep:schemars", "dep:serde_json"]
 rand = ["dep:rand_core"]
 hash = ["dep:blake2"]
@@ -41,9 +41,9 @@ serde = { version = "1.0.190", optional = true }
 serde_derive = { version = "1.0.190", optional = true }
 serde_with = { version = "3.6.1", default-features = false, features = ["alloc"], optional = true }
 bcs = { version = "0.1.6", optional = true }
+serde_json = { version = "1.0.114", optional = true }
 
 # JsonSchema definitions for types, useful for generating an OpenAPI Specificaiton.
-serde_json = { version = "1.0.114", optional = true }
 schemars = { version = "0.8.21", optional = true }
 
 # RNG support

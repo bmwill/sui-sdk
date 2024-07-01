@@ -114,6 +114,20 @@ impl crate::types::ZkLoginPublicIdentifier {
     }
 }
 
+impl crate::types::PasskeyPublicKey {
+    pub fn to_address(&self) -> Address {
+        let mut hasher = Hasher::new();
+        self.write_into_hasher(&mut hasher);
+        let digest = hasher.finalize();
+        Address::new(digest.into_inner())
+    }
+
+    fn write_into_hasher(&self, hasher: &mut Hasher) {
+        hasher.update([self.scheme().to_u8()]);
+        hasher.update(self.inner().inner());
+    }
+}
+
 impl crate::types::MultisigCommittee {
     /// Derive an Address from a MultisigCommittee. A MultiSig address
     /// is defined as the 32-byte Blake2b hash of serializing the flag, the

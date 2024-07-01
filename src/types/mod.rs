@@ -45,6 +45,8 @@ pub use crypto::MultisigCommittee;
 pub use crypto::MultisigMember;
 pub use crypto::MultisigMemberPublicKey;
 pub use crypto::MultisigMemberSignature;
+pub use crypto::PasskeyAuthenticator;
+pub use crypto::PasskeyPublicKey;
 pub use crypto::Secp256k1PrivateKey;
 pub use crypto::Secp256k1PublicKey;
 pub use crypto::Secp256k1Signature;

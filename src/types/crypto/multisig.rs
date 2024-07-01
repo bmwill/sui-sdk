@@ -243,7 +243,8 @@ mod serialization {
                 }
                 SignatureScheme::Multisig
                 | SignatureScheme::Bls12381
-                | SignatureScheme::ZkLogin => {
+                | SignatureScheme::ZkLogin
+                | SignatureScheme::Passkey => {
                     Err(serde::de::Error::custom("invalid public key type"))
                 }
             }
